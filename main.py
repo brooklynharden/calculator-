@@ -1,26 +1,27 @@
-import tkinter as tk
-from tkinter import ttk
+#Addition Function
+def add(num1, num2):
+    sum = num1 + num2
+    return sum
 
-#tkinter is for graphical user interface or math for advanced calculations
+#Subtraction Function
+def subtract(num1, num2):
+    sum = num1 - num2
+    return sum
 
-def button_click(clicked_button):
-    current_text = result_variable.get()
-    if button_click == '=':
-        try:
-            expression = current_text.replace("÷", "/").replace("x", "*")
-            result = eval(expression)
 
-            #Checks if the result is a whole number
-            if result.is_integer():
-                result = int(result)
-            
-            result_variable.set(result)
-        except Exception as e:
-            #If invalid input display 'Error'
-            result_variable.set("Error")
+#Division Function
+def divide(num1, num2):
+    sum = num1 / num2
+    return sum
 
-    elif clicked_button == "C":
-        #'C' respresents clearning the screen
-        result_variable.set("")
-    elif clicked_button == "%":
-        try:
+
+#Modulo Function
+def mod(num1, num2):
+    sum = num1%num2
+    return sum
+
+#Multiplication Function
+def multiply(num1, num2):
+    sum = num1*num2
+    return sum
+
