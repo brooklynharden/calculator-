@@ -25,7 +25,7 @@ def multiply(num1, num2):
     sum = num1*num2
     return sum
 
-Print("Please Selection Operate: -\n" \
+print("Please Selection Operate: -\n" \
     "1. Add\n"
     "2. Subtract\n"
     "3. Divide\n"
@@ -39,9 +39,19 @@ Number_1 = int(input("First Number: "))
 Number_2 = int(input("Second Number: "))
 
 if userSelect == 1:
-    add(Number_1, "+", Number_2, "=")
+   print(Number_1, "+",Number_2,"=", add(Number_1, Number_2))
 
 elif userSelect == 2:
-    subtract(Number_1, "-", Number_2, "=")
+    print(Number_1, "-",Number_2,"=",subtract(Number_1, Number_2))
 
-elif userSelect == 
+elif userSelect == 3:
+    print(Number_1, "/",Number_2,"=", divide(Number_1,Number_2))
+
+elif userSelect == 4:
+    print(Number_1, "+%",Number_2,"=", mod(Number_1,Number_2))
+
+elif userSelect == 5:
+    print(Number_1, "*",Number_2,"=", multiply(Number_1,Number_2))
+
+else:
+    print("Invalid Number")
