@@ -20,6 +20,7 @@ function calculateSquareRoot() {
         display.value = Math.sqrt(number).toString(); //calculate sq and show result
     }
 }
+
 //function to backspace
 function backspace() {
     display.value = display.value.slice(0, -1);
